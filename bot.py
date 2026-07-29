@@ -32,3 +32,7 @@ def init_db():
 if __name__ == '__main__':
     init_db()
     print("Məlumat bazası uğurla yaradıldı!")
+if __name__ == "__main__":
+    init_db()
+    print("Məlumat bazası uğurla yaradıldı!")
+    bot.infinity_polling()
