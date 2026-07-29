@@ -1,5 +1,9 @@
 import sqlite3
+import os
+import telebot
 
+TOKEN = os.getenv("BOT_TOKEN")
+bot = telebot.TeleBot(TOKEN)
 def init_db():
     conn = sqlite3.connect('valide_admin.db')
     cursor = conn.cursor()
